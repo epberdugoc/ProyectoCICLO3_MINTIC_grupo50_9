@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h1>GESTION DE EMPLEADOS-CREAR EMPLEADO<h1>
+        <br>
+       {% block contenido %} 
+        <form action="/crear" method="POST">
+            {{form.cedula.label}} {{form.cedula}}
+            {{form.nombres.label}} {{form.nombres}}
+            {{form.apellidos.label}} {{form.apellidos}}
+            {{form.fechaingreso.label}} {{form.fechaingreso}}
+            {{form.tipocontrato.label}} {{form.tipocontrato}}
+            {{form.terminocontrato.label}} {{form.terminocontrato}}
+            {{form.cargo.label}} {{form.cargo}}
+            {{form.dependencia.label}} {{form.dependencia}}
+            {{form.salario.label}} {{form.salario}}
+            {{form.enviar}}
+            {{form.hidden_tag()}}
+        </form>
+        {% endblock %}
+    </body>
+
+
+</html>
